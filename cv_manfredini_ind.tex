@@ -1,0 +1,141 @@
+
+\documentclass[11pt,a4paper,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+%\usepackage[]{hyperref}
+%\usepackage{soul}
+\usepackage[normalem]{ulem}
+\newcommand\bul{\bgroup\markoverwith{\textcolor{blue}{\rule[-0.5ex]{2pt}{0.4pt}}}\ULon}
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{2.5cm} % Uncomment to change the width of the dates column
+\setlength{\makecvtitlenamewidth}{13cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\nopagenumbers{}  
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{\huge Alessandro} % Your first name \\
+\familyname{\huge  Manfredini } % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+
+\address{University Of Zurich \\ Department of Physics \\ Winterthurerstrasse 190, \\ Z{\"u}rich, }{Switzerland }
+%\extrainfo{ 234 Herzl St., Rehovot}
+\phone{+41 783 285 463}
+\email{manfredi@physik.uzh.ch}
+\extrainfo{Skype: manfredini\_alessandro} % \\ Git: panManfredini}
+\photo[62pt][3pt]{ale_cropped_color.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle 
+
+\section{Personal Details}
+\cvline{\textbf{Birth}}{\emph{November 11th 1985}, Rome, Italy.} 
+\cvline{\textbf{Nationality}}{\emph{Italian.}} 
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cvline{2018--Present}{\textbf{Postdoctoral Fellow in Astroparticle Physics}. \newline \emph{University Of Zurich}, Zurich, Switzerland.} 
+\cvline{2014--2018}{\textbf{Postdoctoral Fellow  in Astroparticle Physics}. \newline \emph{Weizmann Institute of Science}, Rehovot, Israel.} 
+\cvline{2011--2014}{\textbf{Ph.D. Student of International Max Planck Research School.} 
+		    \newline \emph{Max-Planck Institute For Physics}, Munich, Germany.  }
+\cvline{2008--2010}{\textbf{Master of Science in Nuclear and Sub-nuclear Physics.} 
+		   \newline \emph{University of Roma Tre}, Rome, Italy. Grade: 110/110 magna cum laude.}
+
+\section{Skills}
+\cvline{}{My main expertise is in \textbf{statistics} and \textbf{data analysis}. I also have four years of experience in \textbf{automation} software
+(PLC and SCADA systems programming). Proficient in C++, C\#, HTML, Javascript, good knowledge of Python.
+Knowledge of SQL and NoSQL databases as well as data streaming platform like Kafka.}
+
+\section{Coordination and Awards}
+\cvline{2019 --}{ DARWIN experiment's "electrodes and high voltage" sub-group coordinator.} 
+\cvline{2016--2018}{ I was the XENON1T experiment's statistical inference coordinator.} 
+\cvline{2017}{Awarded \emph{"senior postdoctoral fellow"} at Weizmann Institute of Science.} 
+
+
+\section{Second Postdoc}
+\cvline{\textcolor{color1}{2018--Present}} { I joined the group of Prof.~Laura~Baudis as co-leader of an R\&D project for the future DARWIN dark matter detector
+(\bul{\href{https://darwin.physik.uzh.ch/}{more info here}}). I am responsible for the design of a fully automated monitoring and control system
+based on industrial Programmable Logic Controllers (PLC). For this purpose I designed an innovative IoT gateway (\bul{\href{https://opc-proxy.readthedocs.io/en/latest/intro.html}{OPC-Proxy}}) 
+that allows to connect an OPC server with a network of microservices or a streaming platform like Kafka. }
+
+\section{First Postdoc}
+\cvline{\textcolor{color1}{2014--2018}}{I joined the \bul{\href{https://en.wikipedia.org/wiki/XENON}{XENON}} dark matter project in the group of Prof.~Ran~Budnik.
+%	The \bul{\href{https://en.wikipedia.org/wiki/XENON}{XENON project}} features deep underground experiments that aim to detect dark matter with a
+%	liquid xenon Time Projection Chamber. 
+	The XENON collaboration consist of more than 100 physicist from all over the world. 
+%	My main contribution in XENON was to perform data analysis with particular focus on statistical inference of data,
+%	furthermore, I also contributed to the development of the XENON1T slow control system.
+	}
+
+\cvline{\textcolor{color1}{Statistics:}}{For two years I was co-leading the statistical inference team of the XENON1T experiment, we performed 
+hypothesis testing with computation of the confidence intervals and developed the statistical model of the experiment.}
+
+\cvline{\textcolor{color1}{Data Analysis:}}{ I contributed to two independent searches. One performing dark matter search in the 
+	framework of Effective Field Theory. The other investigating inelastic dark matter scattering on $^{129}$Xe isotope.}
+
+\cvline{\textcolor{color1}{Slow Control:}}{I was part of the XENON1T slow control developers team. My main contribution was to design the safety and motion control systems 
+					for a set of motors and belts used to move calibration sources in the experiment. I also developed the high voltage module
+					controller, and the safety system of the experiment's water recirculation facility.}
+
+
+\section{Research during Ph.D.}
+\cvline{}{I joined the \bul{\href{https://atlas.cern/}{ATLAS}} experiment at CERN in 2011 under the supervision of Dr.~Sandra Kortner.  
+%	\bul{\href{https://atlas.cern/}{ATLAS}} is a general purpose particles detector and part of the Large Hadron Collider project. 
+	The ATLAS collaboration consist of thousands of physicist all over the world.}
+
+\cvline{\textcolor{color1}{Thesis Title:}} {"Search for Neutral MSSM Higgs Bosons in  $A/h/H \rightarrow \tau^+\tau^- \rightarrow e\mu + 4\nu$ Decays with the ATLAS Detector." }
+
+\cvline{\textcolor{color1}{Data Analysis}}{
+			My contribution was focused on the estimation of backgrounds and their systematics, the  implementation of 
+			the probability	model for hypothesis testing.
+			}
+
+
+
+\section{Software Skills}
+\cvline{\textcolor{color1}{Data Analysis}}{ Proficient in C++, Deep knowledge of ROOT framework, ROOSTAT and RooFit. Good knowledge of Python and C\#.}
+\cvline{\textcolor{color1}{Automation}}{ PLC ladder diagram, structured text and SCADA programming.}
+\cvline{\textcolor{color1}{Web}}{ Proficient in HTML, CSS, JavaScript, SQL and NoSQL database. Server-side (NodeJS/Django) and client-side programming. 
+Good knowledge of the  Kafka streaming platform.}
+
+\section{My Git Repositories}
+\cvline{}{
+	\begin{tabular}{p{3cm} p{3mm} l}
+		\bul{\href{https://github.com/XENON1T/Xephyr}{Xephyr}} & - & A statistical framework (C++). \\ 
+		\bul{\href{https://github.com/WebComponentHelpers/ImperaJS}{ImperaJS}} & - &  An app-state managment framework (Javascript). \\
+		\bul{\href{https://github.com/WebComponentHelpers/Brick}{Brick-Element}} & - &  A custom-element generator (Javascript). \\
+		\bul{\href{https://github.com/opc-proxy}{OPC-Proxy}} & - &  A modular OPC gateway (C\#). \\
+		\bul{\href{https://github.com/JaS-HMI/jashmi}{JaS-HMI}} & - & A Javascript HMI framework (Javascript). \\
+	\end{tabular}
+	}
+
+%\cvline{\textcolor{color1}{Statistics}}{ A statistical framework: \bul{\href{https://github.com/XENON1T/Xephyr}{Xephyr}}.}
+%\cvline{\textcolor{color1}{Web}}{An app-state managment framework: \bul{\href{https://github.com/WebComponentHelpers/ImperaJS}{ImperaJS}}. \newline
+%A custom-element generator: \bul{\href{https://github.com/WebComponentHelpers/Brick}{Brick-Element}}.}
+%\cvline{\textcolor{color1}{IoT}}{A Javascript HMI framework:  \bul{\href{https://github.com/JaS-HMI/jashmi}{JaS-HMI}}. \newline
+%A modular OPC gateway:~\bul{\href{https://github.com/opc-proxy}{OPC-Proxy}}.}
+
+\newpage
+
+\section{Language Skills}
+\cvline{\textcolor{color1}{Mother tongue}}{ Italian}
+
+\cvline{\textcolor{color1}{English}}{ Fluent - (CEFR C1) } 
+\cvline{\textcolor{color1}{Spanish}}{ Good understanding - (CEFR B1)}
+\cvline{\textcolor{color1}{German}}{Basics - (CEFR A2)}
+\end{document}
