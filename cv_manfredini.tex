@@ -9,6 +9,11 @@
 \usepackage[scale=0.75]{geometry} % Reduce document margins
 \setlength{\hintscolumnwidth}{2.5cm} % Uncomment to change the width of the dates column
 \setlength{\makecvtitlenamewidth}{13cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+%\usepackage[]{hyperref}
+%\usepackage{soul}
+\usepackage[normalem]{ulem}
+\newcommand\bul{\bgroup\markoverwith{\textcolor{blue}{\rule[-0.5ex]{2pt}{0.4pt}}}\ULon}
+
 \nopagenumbers{}  
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -44,8 +49,8 @@
 
 \section{Education}
 
-\cvline{2018--Present}{\textbf{Postdoctoral Fellow}. \newline \emph{University Of Zurich}, Zurich, Switzerland.} 
-\cvline{2014--2018}{\textbf{Postdoctoral Fellow}. \newline \emph{Weizmann Institute of Science}, Rehovot, Israel.} 
+\cvline{2018--Present}{\textbf{Postdoctoral Fellow in Astroparticle Physics}. \newline \emph{University Of Zurich}, Zurich, Switzerland.} 
+\cvline{2014--2018}{\textbf{Postdoctoral Fellow  in Astroparticle Physics}. \newline \emph{Weizmann Institute of Science}, Rehovot, Israel.} 
 \cvline{2011--2014}{\textbf{Ph.D. Student of International Max Planck Research School.} 
 		    \newline \emph{Max-Planck Institute For Physics}, Munich, Germany.  }
 \cvline{2008--2010}{\textbf{Master of Science in Nuclear and Sub-nuclear Physics.} 
@@ -59,23 +64,23 @@
 \cvline{2011--2014}{Data analyst in the ATLAS experiment.} 
 
 \section{Second Postdoc}
-\cvline{\textcolor{color1}{2018--Present}} { I joined the group of Prof.~Laura~Baudis as co-leader of an R\&D project for the future DARWIN dark matter detector.
-DARWIN will be a 50\,tonne liquid-xenon time projection chamber. The aim of this project is to demonstrate electron drift in liquid-xenon above 2.6\,m. 
-For this experiment, I am currently designing the field cage of the time projection chamber and a fully automated monitoring and control system. 
-I was recently appointed coordinator of the DARWIN's electrodes and high voltage sub-group.}
+\cvline{\textcolor{color1}{2018--Present}} { I joined the group of Prof.~Laura~Baudis as co-leader of an ERC funded R\&D project for the future DARWIN dark matter detector.
+DARWIN will be a 50\,tonne liquid-xenon time projection chamber. The aim of this project is to demonstrate electron drift in liquid-xenon above 2.6\,m, crucial for the realization of DARWIN. 
+I have been coordinating the effort for the design and construction of this experiment and I am responsible for its fully automated monitoring and control system.
+During this time I was also appointed coordinator of the DARWIN's electrodes and high voltage sub-group.}
 
 \section{First Postdoc}
 \cvline{\textcolor{color1}{2014--2018}}{I joined the XENON dark matter project in 2014 in the group of Prof.~Ran~Budnik.
 	The XENON project features deep underground experiments that aim to detect dark matter with 
-	a dual phase liquid xenon Time Projection Chamber. XENON1T is the most sensitive dark matter experiment to date. 
+	a dual phase liquid xenon Time Projection Chamber. XENON1T holds the strongest limit on WIMPs searches to date. 
 %	My main contribution in XENON was to perform data analysis with particular focus on statistical inference of data,
 %	furthermore, I also contributed to the development of the XENON1T slow control system.
 	}
 
-\cvline{\textcolor{color1}{Statistics:}}{For two years I was co-leading the statistical inference effort of the XENON1T experiment.
-			I was part of a team that performed the statistical combination of the three science runs of the XENON100 experiment. 
-			%Currently one of my main interests is the development of statistical methods particularly aimed for low rate experiments.
-			}
+\cvline{\textcolor{color1}{Statistics:}}{For two years I was coordinator of the statistical inference effort of the XENON1T experiment.
+			 In this framework I gave  key contributions to the analysis strategy of the two main publications of the experiment.
+			Previously, I was part of a team that performed the statistical combination of the three science runs of the XENON100 experiment. 
+			Currently one of my main interests is the development of statistical methods particularly aimed for low rate experiments.}
 
 \cvline{\textcolor{color1}{Data Analysis:}}{ I contributed to two independent searches of the XENON100 experiment, being one of the main analyzers. One performing dark matter search in the 
 	framework of Effective Field Theory. The other investigating inelastic dark matter scattering on $^{129}$Xe isotope.}
@@ -101,14 +106,35 @@ I was recently appointed coordinator of the DARWIN's electrodes and high voltage
 			}
 
 
-
 \section{Software Skills}
-\cvline{C++}{ Proficient. Deep knowledge of ROOT framework, ROOSTAT and RooFit.}
-\cvline{Python}{ Basic knowledge.}
-\cvline{Automation}{ PLC ladder diagram, structured text and SCADA programming.}
-\cvline{Web}{ This is one of my hobby. Proficient in HTML, CSS, JavaScript, SQL and NoSQL database. Server-side (NodeJS/Django) and client-side programming. }
+\cvline{\textcolor{color1}{Data Analysis}}{ Proficient in C++, ROOT framework, ROOSTAT and RooFit. Good knowledge of Python and C\#.}
+\cvline{\textcolor{color1}{Automation}}{ PLC ladder diagram, structured text and SCADA programming.}
+\cvline{\textcolor{color1}{Web}}{ Proficient in HTML, CSS, JavaScript, SQL and NoSQL database. Server-side (NodeJS/Django) and client-side programming. 
+Good knowledge of Kubernetes and the Kafka streaming platform.}
+
+\section{My Git Repositories}
+\cvline{}{
+	\begin{tabular}{p{3cm} p{3mm} l}
+		\bul{\href{https://github.com/XENON1T/Xephyr}{Xephyr}} & - & A statistical framework (C++). \\ 
+		\bul{\href{https://github.com/WebComponentHelpers/ImperaJS}{ImperaJS}} & - &  An app-state managment framework (Javascript). \\
+		\bul{\href{https://github.com/WebComponentHelpers/Brick}{Brick-Element}} & - &  A web-component generator (Javascript). \\
+		\bul{\href{https://github.com/opc-proxy}{OPC-Proxy}} & - &  A modular OPC gateway (C\#). \\
+		\bul{\href{https://github.com/JaS-HMI/jashmi}{JaS-HMI}} & - & A Javascript Human-Machine-Interface framework. \\
+		\bul{\href{https://github.com/panManfredini/IOTpy}{IOTpy}} & - & A Python framework to  expose devices trough REST API. \\
+	\end{tabular}
+	}
+
+%\cvline{\textcolor{color1}{Statistics}}{ A statistical framework: \bul{\href{https://github.com/XENON1T/Xephyr}{Xephyr}}.}
+%\cvline{\textcolor{color1}{Web}}{An app-state managment framework: \bul{\href{https://github.com/WebComponentHelpers/ImperaJS}{ImperaJS}}. \newline
+%A custom-element generator: \bul{\href{https://github.com/WebComponentHelpers/Brick}{Brick-Element}}.}
+%\cvline{\textcolor{color1}{IoT}}{A Javascript HMI framework:  \bul{\href{https://github.com/JaS-HMI/jashmi}{JaS-HMI}}. \newline
+%A modular OPC gateway:~\bul{\href{https://github.com/opc-proxy}{OPC-Proxy}}.}
 
 \section{Language Skills}
-\cvline{Mother tongue}{ Italian}
-\cvline{Other}{English (fluent), Spanish (basic), German (basics).}
+\cvline{\textcolor{color1}{Mother tongue}}{ Italian}
+
+\cvline{\textcolor{color1}{English}}{ Fluent - (CEFR C1) } 
+\cvline{\textcolor{color1}{Spanish}}{ Good understanding - (CEFR B1)}
+\cvline{\textcolor{color1}{German}}{Basics - (CEFR A2)}
+
 \end{document}
