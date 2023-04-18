@@ -25,11 +25,11 @@
 % All information in this block is optional, comment out any lines you don't need
 \title{Curriculum Vitae}
 
-\address{Limmattalstrasse 316, \\ Z{\"u}rich, }{Switzerland }
+%\address{Limmattalstrasse 316, \\ Z{\"u}rich, }{Switzerland }
 %\extrainfo{ 234 Herzl St., Rehovot}
-\phone{+41 783 285 463}
-\email{ale.manfredini@proton.me}
-\extrainfo{Skype: manfredini\_alessandro} % \\ Git: panManfredini}
+%\phone{+41 783 285 463}
+%\email{ale.manfredini@proton.me}
+%\extrainfo{Skype: manfredini\_alessandro} % \\ Git: panManfredini}
 \photo[62pt][3pt]{ale_cropped_color.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
 
@@ -42,7 +42,9 @@
 \section{Personal Details}
 \cvline{\textbf{Birth}}{\emph{November 11th 1985}, Rome, Italy.} 
 \cvline{\textbf{Nationality}}{\emph{Italian.}}
-%\cvline{\textbf{Address}}{\emph{Limmattalstrasse 316, 8049 } Z{\"u}rich, Switzerland. }
+\cvline{\textbf{Address}}{\emph{Limmattalstrasse 316, 8049 } Z{\"u}rich, Switzerland. }
+\cvline{\textbf{E-mail}}{ale.manfredini@proton.me}
+\cvline{\textbf{Phone}}{+41 783 285 463}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -65,15 +67,31 @@
 %\cvline{2019 --}{ DARWIN experiment's "electrodes and high voltage" sub-group coordinator.} 
 %\cvline{2017}{Awarded \emph{"senior postdoctoral fellow"} at Weizmann Institute of Science.} 
 
+% Two years experience of software development for enviromental monitors in the field of radiation protection.
+% Designed software to interface with mass flowmeters, valves etc.
+
 \section{About Me}
-\cvline{}{My main expertise are in data intensive statistical analyses and the Internet of Things. Proficient in C++, JavaScript and Python. 
- Good knowledge of back-end and front-end web programming as well as micro-service orchestration with Kubernetes. Good knowledge of SQL and NoSQL databases and data streaming platform like Kafka.
- After all that, I like to go climbing. }
+\cvline{}{
+My main expertise are in data intensive statistical analyses and the Internet of Things. 
+For the last two years I was employed in the development/maintainance of the software stack for enviromental monitors in the field of radiation protection.
+I have been professionally programming in C++, Python and JavaScript for more than six years. 
+I am experienced with micro-service architecture design, Docker and orchestration with Kubernetes. 
+I have good knowledge of SQL and NoSQL databases.
+% I'm passionate about....
+And when I've finished programming, I love to go rock climbing. }
 
 \section{Software Engineer at Arktis}
 \cvline{\textcolor{color1}{2021--Present}} {
-I develop algorithms to identify radioactive materials. I develop, maintain and test the Arktis software stack.
-}
+\bul{\href{https://www.arktis-detectors.com}{Arktis}} is a company that designs innovative solutions for radiation detection.
+The most common products are Radiation Portal Monitors, which are systems equipped with a variety of sensors (radiation detectors, lidar, camera, temperature, humidity) 
+and an embedded PC for realtime data analysis.}
+\cvline{\textcolor{color1}{Software Stack:}}{Being a small company I've been developing and maintaining the entire software stack, 
+from sensor readout and detecors calibration to event data analysis, web interface and user experience. My main responsability is to design
+algorithms that efficiently identify in real-time the radioactive isotopes based on the recorded energy spectra.}
+\cvline{\textcolor{color1}{Machine Learning:}}{ I've been designing and training deep learning models (Keras/Tensorflow)
+for spectral identification using radiation detectors data. I've also developed a neural-network that classifies road traffic conditions (in the vicinity of the sensors)
+using camera images.}
+
 \section{Research During Second Postdoc}
 \cvline{\textcolor{color1}{2018--2021}} { I joined the group of Prof.~Laura~Baudis as co-leader of an ERC funded R\&D project for the future DARWIN dark matter detector
 (\bul{\href{https://darwin.physik.uzh.ch/}{more info here}}). I was responsible for the design of a fully automated experiment monitoring and control system
@@ -93,8 +111,8 @@ allowing to control the experiment remotely from a browser.}
 \cvline{\textcolor{color1}{Statistics:}}{For two years I was co-leading the statistical inference team of the XENON1T experiment, where I performed 
 hypothesis testing with computation of the confidence intervals and developed the statistical model of the experiment.}
 
-\cvline{\textcolor{color1}{Data Analysis:}}{ I contributed with two independent Analyses. One performing dark matter search in the 
-	framework of Effective Field Theory. The other investigating inelastic dark matter scattering on $^{129}$Xe isotope.}
+%\cvline{\textcolor{color1}{Data Analysis:}}{ I contributed with two independent Analyses. One performing dark matter search in the 
+%framework of Effective Field Theory. The other investigating inelastic dark matter scattering on $^{129}$Xe isotope.}
 
 \cvline{\textcolor{color1}{Slow Control:}}{I was part of the XENON1T slow control developers team. My main contribution was to design the safety and motion control systems 
 					for a set of motors and belts used to move calibration sources in the experiment. I also developed the high voltage module
@@ -124,7 +142,7 @@ hypothesis testing with computation of the confidence intervals and developed th
 \cvline{\textcolor{color1}{Deep Learning}}{ Basic knowledge of Keras and TensorFlow.}
 \cvline{\textcolor{color1}{Web Tools}}{SQL (PostgreSQL) and NoSQL (MongoDB) databases. Server-side programming with NodeJS, Twisted and Django. Good knowledge of asynchronous programming and multi-threading programming. 
                                         Websocket and SSE. Knowledge of lit-element front-end framework (for custom-elements) and Redux. }
-\cvline{\textcolor{color1}{Communication Protocols}}{RS232, TCP-IP sockets, OPC, MQTT.}
+\cvline{\textcolor{color1}{Communication Protocols}}{RS232, TCP-IP sockets, gRPC, Arrow, OPC, MQTT.}
 \cvline{\textcolor{color1}{Monitoring}}{Operative knowledge of Prometheus, AlertManager, InfluxDB and Grafana.}
 \cvline{\textcolor{color1}{Cloud}}{Experience with Google Cloud Platform, Kubernetes, Docker.} 
 \cvline{\textcolor{color1}{Big Data}}{Operative knowledge of Apache Kafka.} 
@@ -152,6 +170,5 @@ hypothesis testing with computation of the confidence intervals and developed th
 \cvline{\textcolor{color1}{Mother tongue}}{ Italian}
 
 \cvline{\textcolor{color1}{English}}{ Fluent - (CEFR C1) } 
-\cvline{\textcolor{color1}{Spanish}}{ Good understanding - (CEFR B1)}
-\cvline{\textcolor{color1}{German}}{Basics - (CEFR A2)}
+\cvline{\textcolor{color1}{German}}{ Basic - (CEFR A2/B1)}
 \end{document}
